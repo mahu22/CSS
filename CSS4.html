@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CSS Lab 4">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+	<title>CSS Lab 4</title>
+	<style type="text/css">
+		.container {
+			width: 90%;
+			margin: 5% auto;
+			padding: 25px;
+			background-color: #fff;
+		}
+		p, td, th, input, h1, a {
+			font-family: 'Times New Roman', serif;
+			font-size: 15px;
+			font-weight: 400;
+		}
+		.top{
+			position: relative;
+		}
+		#dropdown-menu{
+			float: left;
+            position:absolute;
+            z-index:1;
+		}
+		#dropdown{
+			background-color: #fff;
+            border: 1px solid;
+		}
+		#droptext{
+			display: inline-block;
+        }	
+		.heading {
+			text-align: center;
+		}
+		.heading h1{
+        	position:relative;
+			display: inline-block;
+            font-size:25px;
+            font weight: 400;
+		}
+		.heading span{
+			font-weight: 600;
+		}
+		.search-box{
+        	position:absolute;
+        	top: 0px;
+        	right: 0px;
+            display:inline-block;
+       		float: right;
+			border: 2px solid;
+        }    
+		.table-container{
+			text-align: left;
+		}	
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			text-align: left;
+		}
+		table, tr, td, th {
+			border: 1px solid #ccffd9;
+		}
+		table button {
+			border: none;
+			background: none;
+			cursor: pointer;
+		}
+		td, th {
+			padding: 10px 10px;
+		}
+		table button:focus {
+			outline: none;
+		}
+		.icons i:hover {
+			opacity: 0.5;
+		}
+		.fa-pen {
+			margin: 0 15px;
+			color: #FFC207;
+		}
+		.fa-trash {
+			color: #E34724;
+		}  
+		.fa-eye {
+			color: #03A9F4;
+		} 
+		.bottom span{
+			font-weight: 700;
+		}
+		.pagination {
+			float: right;
+			fon: black;
+	    }
+        .pagination a.prvnxt {
+        	padding:5px;
+        	text-decoration:none;
+        	color: black;
+            border:1px solid;
+            border-style:hidden;
+            border-radius: 5 px;
+            background-color: #ffe6e6;
+        }
+		.pagination a.num {
+			text-decoration: none;
+			color: black;
+			border-radius: 50%;
+            border:1px solid;
+            border-style:hidden;
+            background-color: #ffe6e6;
+			padding: 10px 16px;
+		} 
+		.pagination a:hover:not(.active) {
+			color: black; 
+		}
+		.pagination a.active {
+        	text-decoration: none;
+			border-radius: 50%;
+            border:1px solid;
+            border-style:hidden;
+            background-color: #ffe6e6;
+			padding: 10px 16px;
+			background-color: #03A9F4;
+			font-weight: 600;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class ="container">
+	<div class="top">
+		<div id ="dropdown-menu"> <!-- Dropdown Menu-->
+			<label for="dropdown">Show</label>
+				<select id="dropdown">
+					<option value="5" selected>5</option>
+					<option>10</option>
+				</select>
+			<p id="droptext">entries</p>
+		</div>
+		<div class="heading"><!--Heading-->
+			<h1>Customer <span>Details</span></h1>
+		</div>
+		<div class="search-box"><!-- The search box-->
+				<input type="text" placeholder="search">
+		</div>	
+	</div>
+		<div class="table-container">
+			<table>
+				<tr>
+					<th>#</th>
+					<th>Name <button><i class="fas fa-sort"></i></button></th>
+					<th>Address</th>
+					<th>City <button><i class="fas fa-sort"></i></button></th>
+					<th>Pincode</th>
+					<th>Country <button><i class="fas fa-sort"></i></button></th>
+					<th>Actions</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Thomas Hardy</td>
+					<td>89 Chiaroscuro Rd.</td>
+					<td>Portland</td>
+					<td>91219</td>
+					<td>USA</td>
+					<td class="icons">
+						<button><i class="fas fa-eye"></i></button>
+						<button><i class="fas fa-pen"></i></button>
+						<button><i class="fas fa-trash"></i></button>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Maria Anders</td>
+					<td>Obere Str.57</td>
+					<td>Berlin</td>
+					<td>12209</td>
+					<td>Germany</td>
+					<td class="icons">
+						<button><i class="fas fa-eye"></i></button>
+						<button><i class="fas fa-pen"></i></button>
+						<button><i class="fas fa-trash"></i></button>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Fran Wilson</td>
+					<td>C/ Araquil,67</td>
+					<td>Madrid</td>
+					<td>28023</td>
+					<td>Spain</td>
+					<td class="icons">
+						<button><i class="fas fa-eye"></i></button>
+						<button><i class="fas fa-pen"></i></button>
+						<button><i class="fas fa-trash"></i></button>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Dominique Perrier</td>
+					<td>25, rue Lauriston</td>
+					<td>Paris</td>
+					<td>75016</td>
+					<td>France</td>
+					<td class="icons">
+						<button><i class="fas fa-eye"></i></button>
+						<button><i class="fas fa-pen"></i></button>
+						<button><i class="fas fa-trash"></i></button>
+					</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Martin Blank</td>
+					<td>Via Monte Bianco 34</td>
+					<td>Turin</td>
+					<td>10100</td>
+					<td>Italy</td>
+					<td class="icon">
+						<button><i class="fas fa-eye"></i></button>
+						<button><i class="fas fa-pen"></i></button>
+						<button><i class="fas fa-trash"></i></button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="bottom">
+			<p>Showing <span>5</span> out of <span>25</span> entries</p>
+			<div class="pagination">
+				<a href="#" class="prvnxt">Previous</a>
+				<a href="#" class="num">1</a>
+				<a href="#" class="num">2</a>
+				<a href="#" class="active">3</a>
+				<a href="#" class="num">4</a>
+				<a href="#" class="num">5</a>
+				<a href="#" class="prvnxt">Next</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

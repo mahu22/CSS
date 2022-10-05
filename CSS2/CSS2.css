@@ -1,0 +1,16 @@
+body{
+    background-color: #f0f0f2;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif; <!--Font fallbacks added as per the ones given at w3schools.-->
+    line-height: 1.5;
+}
+div{
+    width: 600px;
+    padding: 50px 35px;
+    background-color: #fdfdff;
+    border-radius: 10px;
+    margin: 100px auto;
+    box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.05); <!--Box Shadow examples can be seen in w3schools to get an idea of the colour values.-->
+}
+a{
+    text-decoration: none;
+}

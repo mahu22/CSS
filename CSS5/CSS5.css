@@ -1,0 +1,173 @@
+*{
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+p, h1, h2, a, input {
+			font-weight: 300;
+			font-family: 'Roboto', sans-serif;
+			color: #fff;
+		}
+.container{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: #2C5254;
+}
+.innercontainer{
+	border-radius: 5px;
+	margin: 5% 10%;
+	box-shadow: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.columns{
+	display: flex;
+	position: relative;
+	height: inherit;
+}
+/* All Css for topbar goes here*/
+.topbar{
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+}
+#circle1{
+	display: inline-block;
+	color: darkorange;
+}
+#circle2{
+	display: inline-block;
+	color: yellow ;
+}
+#circle3{
+	display: inline-block;
+	color: lightgrey;
+}
+.bi{
+	font-size: 10px;
+	padding-right: 5px;
+}
+/*Css for the left column goes here*/
+.leftcolumn{
+	background-color: #151A22;
+	flex-direction: column;
+	height: 70vh ;
+	width:  65%;
+	overflow: hidden;
+}
+.logo{
+	position: relative;
+	top: 10%;
+	left: 5%;
+	padding: 5px;
+}
+.logo img{
+	width: 10%;
+}
+.text{
+	position: relative;
+	display: block;
+	top: 20%;
+	margin-left: 5%;
+}
+.text h1{
+	font-weight: 400;
+	padding: 2%;
+}
+.text p{
+	line-height: 1.5;
+}
+.text h2,p{
+	color: #3CBF7D ;
+	padding: 2%;
+	opacity: 0.6;
+}
+.text a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	margin-left: 2%;
+	color: #fff;
+	background-color: #3CBF7D;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.text a:hover {
+	background-color: #008876;
+}
+.footerlinks{
+	position: relative;
+	top: 40%;
+	left: 5%;
+}	
+.footerlinks a{
+	position: relative;
+	display: inline;
+	padding:  10px 20px;
+	font-size: 13px;
+	opacity: 0.6;
+	font-weight: 400;
+	color: #3CBF7D;
+	opacity: 0.8;
+}
+.footerlinks i{
+	display: inline-block;
+	color: #3CBF7D;
+	padding-right: 20px;
+}
+#dropdown{
+	padding-right: 0;
+}
+/*Css for right column goes here*/
+.rightcolumn{
+	display: flex;
+	flex-direction: column;
+	height: 70vh;
+	width: 35%;
+	background-color: #3CBF7D;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+.rightcolumn h2{
+	position: relative;
+	margin-left:  5%;
+	margin-top: 50%;
+}
+form > input{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: none;
+	padding: 10px 0px;
+	display: inline-block;
+	color: #fff;
+	width: 100%;
+	font-size: 16px;
+}
+form > input:focus{
+	outline: none;
+}
+.loginbutton{
+	margin-left: 5%;
+	margin-top: 5%;
+	display: inline-block;
+}
+.loginbutton input{
+	padding:  10px 30px;
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #3CBF7D ;
+	font-weight: 600;
+}
+.loginbutton a {
+	font-size: 14px;
+	opacity: 0.8;
+}
+.login-buttons a:hover {
+	opacity: 1;
+}
